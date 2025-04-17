@@ -1,0 +1,10 @@
+FROM ubuntu
+MAINTAINER 	name shubham
+LABEL this is first img
+#WORKDIR /shubham/amazon/pord/
+COPY app.java /opt/
+#ADD https://dlcdn.apache.org/tomcat/tomcat-9/v9.0.104/bin/apache-tomcat-9.0.104.tar.gz /
+
+RUN   apt update -y
+RUN  apt install git -y 
+RUN touch ashs
